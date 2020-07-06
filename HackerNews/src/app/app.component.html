@@ -1,27 +1,7 @@
 
-<h2>Today's article</h2>
-
-<hr>
-
-
-  <table>
-    <div *ngFor="let art of articles">
-    <tr>
-      <td width="300px"><a href="{{art.url}}" target="_blank">{{art.title}}</a></td>
-      <td><likes></likes></td>
-
-    </tr>
-    </div>
-  </table>
-
-<hr>
-<textarea  cols="70" id="article-title" placeholder="New title"></textarea>
-<br>
-<textarea  cols="70" id="article-url" placeholder="New url"></textarea>
-<br>
-<button (click)="addArticle()">Add</button>
-<br>
-
-<hr>
-@CodeGym, 2019
-
+<div style="width: 100%;height: 100%;background: #e8f1cf">
+<app-navbar></app-navbar>
+<app-sidabar style="float: left"></app-sidabar>
+<app-body-web style="float: left"></app-body-web>
+<app-footer ></app-footer>
+</div>

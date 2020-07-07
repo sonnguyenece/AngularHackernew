@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyWebComponent } from './body-web/body-web.component';
 import { SidabarComponent } from './sidebar/sidabar.component';
+import { NewArticleComponent } from './new-article/new-article.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SidabarComponent } from './sidebar/sidabar.component';
     NavbarComponent,
     FooterComponent,
     BodyWebComponent,
-    SidabarComponent
+    SidabarComponent,
+    NewArticleComponent
   ],
   imports: [
     BrowserModule,

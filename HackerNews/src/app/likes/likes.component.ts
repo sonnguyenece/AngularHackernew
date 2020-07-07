@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'likes',
@@ -6,7 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./likes.component.css']
 })
 export class LikesComponent implements OnInit {
-  likes: number = 0;
+  @Input()
+  likes: number;
 
   constructor() {
   }

@@ -7,18 +7,10 @@
   <div *ngFor="let art of articles">
     <tr>
       <td width="300px"><a href="{{art.url}}" target="_blank">{{art.title}}</a></td>
-      <td><likes></likes></td>
+      <td><likes [likes]="art.like"></likes></td>
 
     </tr>
   </div>
 </table>
 
-<hr>
-<textarea  cols="70" id="article-title" placeholder="New title"></textarea>
-<br>
-<textarea  cols="70" id="article-url" placeholder="New url"></textarea>
-<br>
-<button (click)="addArticle()">Add</button>
-<br>
-
-<hr>
+<app-new-article></app-new-article>

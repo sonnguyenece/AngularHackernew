@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Article} from "../article";
 
 @Component({
   selector: 'app-new-article',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-article.component.css']
 })
 export class NewArticleComponent implements OnInit {
-
+  @Input()
+  articles: Article[];
   constructor() { }
 
   ngOnInit(): void {
@@ -23,7 +25,7 @@ export class NewArticleComponent implements OnInit {
       url: url,
       like: 0
     };
-    console.log(article)
+
     this.articles.push(article);
   }
 }
